@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Battle 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="title">
+    <h1>Cyber Battle 2025</h1>
+    <a class="repoLink" href="https://github.com/cyberc0dex/cbctf25-quali" target="_blank">github.com/cyberc0dex/cbctf25-quali</a>
+</div>
+
+<!--  CRYPTOGRAPHY  -->
+<div class="wrapper">
+    <div class="category">
+        <h2 class="accordionn" onclick="toggleCategory(this)">
+            <span class="arrow">▸</span> Cryptography
+        </h2>
+
+        <div class="category-content">
+
+            <!-- Journey home in Tokyo -->
+            <div class="challenge">
+                <div class="challName">Journey home in Tokyo</div>
+                <div class="download">
+                    <span><a href="ctf/Crypto/Journey home in Tokyo/tokyo.png" download><button class="moreBtn"><span class="downloadicon">📥</span>tokyo.png</button></a><a href="ctf/Crypto/Journey home in Tokyo/q.txt" download><button><span class="downloadicon">📥</span>q.txt</button></a></span>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_crypto_1" placeholder="Flag format: CBCTF{flag}">
+                    <button onclick="checkFlag('challenge_crypto_1')">Submit Flag</button><br>
+                    <a href="ctf/Crypto/Journey home in Tokyo/solution_crypto_1.pdf" target="_blank">
+                        <button class="solnBtn">View Solution</button> 
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3rd Times the Charm -->
+            <div class="challenge">
+                <div class="challName">3rd Time's the Charm</div>
+                <div class="context">The first one is simple. Then its shifted further. But after that its uniform.<br><br>69 68 69 87 73 124 98 115 121 96 103 102 117 121 97 120 107 107 96 116 108 96 110 113 118 106 117 117 105 126</div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_crypto_2" placeholder="Flag format: CBCTF{flag}">
+                    <button onclick="checkFlag('challenge_crypto_2')">Submit Flag</button><br>
+                    <a href="ctf/Crypto/3rd Times the charm/solution_crypto_2.pdf" target="_blank">
+                        <button class="solnBtn">View Solution</button> 
+                    </a>
+                </div>
+            </div>
+
+            <!-- Time is Gold -->
+            <div class="challenge">
+                <div class="challName">Time is Gold</div>
+                <div class="context">
+                    We intercepted messages from the adversary, it was sent from their base in Portland Oregon. 
+                    Help us decipher what they said. Time is of the essence.
+                </div>
+                <div class="download">
+                    <span><a href="ctf/Crypto/Time is Gold/fixed_messages.txt" download><button class="moreBtn"><span class="downloadicon">📥</span>fixed_messages.txt</button></a><a href="ctf/Crypto/Time is Gold/time-snipet.py" download><button class="moreBtn2"><span class="downloadicon">📥</span>time-snipet.py</button></a></span>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_crypto_3" placeholder="Work in progress..." class="inputDisabled" disabled>
+                    <button onclick="checkFlag('challenge_crypto_3')" class="btnDisabled" disabled>Submit Flag</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--  NETWORK  -->
+<div class="wrapper">
+    <div class="category">
+        <h2 class="accordionn" onclick="toggleCategory(this)">
+            <span class="arrow">▸</span> Network
+        </h2>
+
+        <div class="category-content">
+
+            <!-- Command & Control  -->
+            <div class="challenge">
+                <div class="challName">Command & Control</div>
+                <div class="context">
+                    Our SOC detected suspicious activity from a suspected APT group. Analyze the network capture and uncover the C2 Server Address.
+                </div>
+                <div class="download">
+                    <a href="ctf/Network/Command and Control/CyberWar.pcap" download>
+                        <button><span class="downloadicon">📥</span>CyberWar.pcap</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_network_1" placeholder="Flag format: CBCTF{flag}">
+                    <button onclick="checkFlag('challenge_network_1')">Submit Flag</button><br>
+                    <a href="ctf/Network/Command and Control/solution.png" target="_blank">
+                        <button class="solnBtn">View Solution</button> 
+                    </a>
+                </div>
+            </div>
+
+            <!-- Encoded Message -->
+            <div class="challenge">
+                <div class="challName">Encoded Message</div>
+                <div class="context">
+                    “After an escalation at the digital border between two hostile states, cyber intel intercepted a suspicious stream of UDP packets between public IPs believe to be tied to a military-grade malware operator. The packets are small, seemingly harmless, and strangely timed... You’re tasked with analyzing this communication and recovering any hidden message that might signal an upcoming strike.”
+                </div>
+                <div class="download">
+                    <a href="ctf/Network/Encoded Message/Enc0ded_M3ssag3.pcap" download>
+                        <button><span class="downloadicon">📥</span>Enc0ded_M3ssag3.pcap</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_network_2" placeholder="Flag format: CBCTF{flag}">
+                    <button onclick="checkFlag('challenge_network_2')">Submit Flag</button>
+                </div>
+            </div>
+
+            <!-- MITRE -->
+            <div class="challenge">
+                <div class="challName">MITRE ATT&CK</div>
+                <div class="context">
+                    “During a routine threat hunt across a high-security defense network, your blue team detected anomalous traffic patterns captured via wireshark. Initial analysis flagged the use of Data Encoding Techniques (MITRE ATT&CK T1132) – a known obfuscation method often used to conceal malicious command-and-control communications.
+                    <br><br>
+                    The traffic appears to be sliver to a C2 payload, suggesting an advanced threat actor is attempting to establish a foothold within the environment.”
+                </div>
+                <div class="download">
+                    <a href="ctf/Network/MITRE ATTACK/mitre.pcap" download>
+                        <button><span class="downloadicon">📥</span>mitre.pcap</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_network_3" placeholder="Work in progress..." class="inputDisabled" disabled>
+                    <button onclick="checkFlag('challenge_network_3')" class="btnDisabled" disabled>Submit Flag</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--  FORENSIC  -->
+<div class="wrapper">
+    <div class="category">
+        <h2 class="accordionn" onclick="toggleCategory(this)">
+            <span class="arrow">▸</span> Forensics
+        </h2>
+
+        <div class="category-content">
+
+            <!-- A Peculiar TV Show  -->
+             <div class="challenge">
+                <div class="challName">A Peculiar TV Show</div>
+                <div class="context">
+                    Dr. Sheldon Cooper, renowned theoretical physicist and part-time vexillologist, has generously shared his latest educational masterpiece: “Fun with Flags: A guide”. 
+                    Within its pages, you’ll find a deep dive into the world of flags, complete with trivia, design principles, and classic Cooper wit.
+                    <br><br>
+                    The document appears to be exactly what it claims: a guide to vexillology. But is that all it is? The good doctor is known for his love of precision... and puzzles.
+                </div>
+                <div class="download">
+                    <a href="ctf/Forensics/A Peculiar TV Show/Fun_with_Flags_Guide.docx" download>
+                        <button><span class="downloadicon">📥</span>Fun_with_Flags_Guide.docx</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_forensic_1" placeholder="Flag format: CBCTF{flag}">
+                    <button onclick="checkFlag('challenge_forensic_1')">Submit Flag</button><br>
+                    <a href="ctf/Forensics/A Peculiar TV Show/solution_forensics_1.pdf" target="_blank">
+                        <button class="solnBtn">View Solution</button> 
+                    </a>
+                </div>
+            </div>
+
+            <!-- Photogrammetry -->
+            <div class="challenge">
+                <div class="challName">Photogrammetry</div>
+                <div class="context">Get your measurements right.<br><br></div>
+                <div style="color: #bd3e6c;">nc exploit.cyberbattle.info 7331</div>
+                <div class="download">
+                    <a href="https://drive.google.com/file/d/1XiPMmOpJHdJ_wvuiMcO66z4TamJUNpE2/view?usp=drive_link" download>
+                        <button><span class="downloadicon">📥</span>PHOTOS.zip</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_forensic_2" placeholder="Challenge not available" class="inputDisabled" disabled>
+                    <!-- <button onclick="checkFlag('challenge_forensic_2')" class="btnDisabled" disabled>Submit Flag</button> -->
+                </div>
+            </div>
+
+            <!-- Operation LC -->
+            <div class="challenge">
+                <div class="challName">OPERATION LC</div>
+                <div class="context">
+                    “During a high-stakes cyberwarfare operation, our Special Cyber Operations Unit successfully raided an enemy intelligence base in Eastern Europe. Among the seized evidence was a USB drive labeled LAUNCH_CODE – a critical piece of intelligence that could prevent a devastating cyber attack.
+                    <br><br>
+                    The enemy operative was in the final stages of preparing a coordinated cyber attack on critical infrastructure. The LAUNCH_CODE USB contains the activation codes needed to prevent the attack. Time is critical – these codes are time-sensitive.
+                    <br><br>
+                    Your mission is to examine the seized USB drive and recover the launch codes.”
+                </div>
+                <div class="download">
+                    <a href="https://drive.google.com/file/d/1wy2GCGcu4uoXN_ar2pnCGA-zKNnCM1TI/view?usp=drive_link" download>
+                        <button><span class="downloadicon">📥</span>usb_drive.img</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_forensic_3" placeholder="Flag format: CBCTF{flag}">
+                    <button onclick="checkFlag('challenge_forensic_3')">Submit Flag</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--  MISC  -->
+<div class="wrapper">
+    <div class="category">
+        <h2 class="accordionn" onclick="toggleCategory(this)">
+            <span class="arrow">▸</span> Miscellaneous
+        </h2>
+
+        <div class="category-content">
+
+            <!-- Share -->
+            <div class="challenge">
+                <div class="challName">Share</div>
+                <div class="context">
+                    /J93Btjtj
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_misc_2" placeholder="Flag format: CBCTF{flag}">
+                    <button onclick="checkFlag('challenge_misc_2')">Submit Flag</button><br>
+                    <a href="ctf/Misc/Share/solution.png" target="_blank">
+                        <button class="solnBtn">View Solution</button> 
+                    </a>
+                </div>
+            </div>
+
+            <!-- Operation Gatecrash -->
+            <div class="challenge">
+                <div class="challName">Operation Gatecrash</div>
+                <div class="context">
+                    Source: Compromised adversary communication channel
+                    <br><br>
+                    Classification: Sensitive – Analyst Eyes Only
+                    <br><br>
+                    Summary: During routine monitoring, our team intercepted an image inadvertently leaked by the target. The adversary appears unaware of the operational risk introduced by this disclosure. While the photo may appear harmless, preliminary analysis suggest it contains valuable intelligence regarding their movements.
+                    <br><br>
+                    Assessment: Analysts believe the environment captured in the image provides sufficient context to determine the adversary’s point of departure, their likely destination, and the specific flight they boarded. This data, once correlated, will allow us to reconstruct their exfiltration path.
+                    <br><br>
+                    Analyst Tasking: 
+                    <br>* Identify the departure airport (IATA CODE).
+                    <br>* Determine the destination airport (IATA CODE).
+                    <br>* Confirm the flight number
+                    <br><br>
+                    FLAG FORMAT: CBCTF{DEPARTURE-DESTINATION-FLIGHTNUMBER}
+                </div>
+                <div class="download">
+                    <a href="ctf/Misc/Operation Gatecrash/classified.JPG" download>
+                        <button><span class="downloadicon">📥</span>classified.JPG</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_misc_3" placeholder="Work in progress..." class="inputDisabled" disabled>
+                    <button onclick="checkFlag('challenge_misc_3')" class="btnDisabled" disabled>Submit Flag</button>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--  WEB  -->
+<div class="wrapper">
+    <div class="category">
+        <h2 class="accordionn" onclick="toggleCategory(this)">
+            <span class="arrow">▸</span> Web
+        </h2>
+
+        <div class="category-content">
+
+            <!-- Warming Up the Parameters  -->
+            <div class="challenge">
+                <div class="challName">Warming Up the Parameters</div>
+                <div class="context">
+                    <div class="WIP">Solution by others:<br><a href="https://github.com/N0Juan/CBCTF25/tree/main/WEB/Warming-Up" target="_blank">Credits to Team 3MVIPI</a></div>
+                </div>
+            </div>
+
+            <!-- Secure Archive -->
+            <div class="challenge">
+                <div class="challName">Secure Archive</div>
+                <div class="context">
+                    <div class="WIP">Solution by others:<br><a href="https://github.com/N0Juan/CBCTF25/tree/main/WEB/Secure-Archive" target="_blank">Credits to Team 3MVIPI</a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--  EXPLOIT  -->
+<div class="wrapper">
+    <div class="category">
+        <h2 class="accordionn" onclick="toggleCategory(this)">
+            <span class="arrow">▸</span> Exploit
+        </h2>
+
+        <div class="category-content">
+
+            <!-- Operation Echo -->
+            <div class="challenge">
+                <div class="challName">Operation Echo</div>
+                <div class="context">
+                    In the heart of the cyber-conflict, "Mr. Robot's Printing Press" is churning out battlefield intelligence for commanders worldwide. But the press's output console — the Warzone Terminal — has a flaw. Anything you say is echoed back into the network without proper security checks.
+                    <br><br>
+                </div>
+                <div style="color: #bd3e6c;">nc exploit.cyberbattle.info 9797</div>
+                <div class="download">
+                    <a href="ctf/Exploit/Operation Echo/print" download>
+                        <button><span class="downloadicon">📥</span>print</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_exploit_1" placeholder="Challenge not available" class="inputDisabled" disabled>
+                    <!-- <button onclick="checkFlag('challenge_exploit_1')">Submit Flag</button> -->
+                </div>
+            </div>
+
+            <!-- The Last Spark -->
+            <div class="challenge">
+                <div class="challName">The Last Spark</div>
+                <div class="context">
+                    The city runs dark. A total blackout. Yet in the heart of the abandoned grid, one terminal still hums – barebones, minimal, lifeless... but not dead. 
+                    The interface offers no clues – just a blinking cursor awaiting the right input. Weeks ago, engineers dumped a script. You might want to start there. Run it. Understand it. 
+                    Something in there might help generate what the system expects. Input it correctly... and maybe, just maybe, you’ll see the last bulb flicker back to life.
+                    <br><br>
+                </div>
+                <div style="color: #bd3e6c;">https://lightbulb.cyberbattle.info/</div>
+                <div class="download">
+                    <a href="ctf/Exploit/The Last Spark/sim0.py" download>
+                        <button><span class="downloadicon">📥</span>sim0.py</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_exploit_2" placeholder="Challenge not available" class="inputDisabled" disabled>
+                    <!-- <button onclick="checkFlag('challenge_exploit_2')" class="btnDisabled" disabled>Submit Flag</button> -->
+                </div>
+            </div>
+
+            <!-- Gandalf -->
+            <div class="challenge">
+                <div class="challName">The Bridge of Khazad-Dum</div>
+                <div class="context" style="color: #bd3e6c;">nc exploit.cyberbattle.info 9999</div>
+                <div class="download">
+                    <a href="ctf/Exploit/The Bridge of Khazad-Dum/gandalf_crackme" download>
+                        <button><span class="downloadicon">📥</span>gandalf_crackme</button>
+                    </a>
+                </div>
+                <div class="checkFlag">
+                    <input type="text" id="challenge_exploit_3" placeholder="Challenge not available" class="inputDisabled" disabled>
+                    <!-- <button onclick="checkFlag('challenge_exploit_3')" class="btnDisabled" disabled>Submit Flag</button> -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div style="padding-bottom:80px;"></div>
+
+<div id="popup" class="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

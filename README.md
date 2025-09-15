@@ -11,7 +11,7 @@ Cyber Battle CTF 2025 Qualifying - Challenges and Solutions
 
 ## CTF Challenges
 
-Replay available here : [cyberc0dex.github.io/CBCTF25](https://cyberc0dex.github.io/CBCTF25/)
+Replay available here : [cyberc0dex.github.io/cbctf25-quali](https://cyberc0dex.github.io/cbctf25-quali/)
 <br><br>
 
 | Category | Challenge Name | Status | Flag | Challenge | Solution |
